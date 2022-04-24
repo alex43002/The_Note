@@ -1,35 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Flicker_Light : MonoBehaviour
-{
-
-    [SerializeField]
-    private Light [] toFlicker;
-
-    private static int MAX = 9000;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        foreach(Light e in toFlicker)
-        {
-            e.intensity = 0;
-        }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        foreach (Light e in toFlicker)  
-        {
-            int n = Random.Range(5000, MAX);
-            e.intensity += n * Time.deltaTime;
-            if(e.intensity > MAX)
-            {
-                e.intensity = 0;
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4ad3a3ed15209c2f8b48c9ea54e1c9471caed41702854fddc9267bf463cd0e08
+size 740

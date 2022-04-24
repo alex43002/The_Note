@@ -1,32 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-
-public class Player_UI : MonoBehaviour
-{
-
-    [SerializeField]
-    private Slider Player_Health;
-
-    [SerializeField]
-    private Slider Player_Stamina;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        Player_Health.maxValue = 100;
-        Player_Health.value = 100;
-
-        Player_Stamina.maxValue = 50;
-        Player_Stamina.value = 50;
-    }
-
-    
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9ebe5e96d05fb7d5e2553a5ebe08cf4bac824a9984d04b71da822520b3881dda
+size 605

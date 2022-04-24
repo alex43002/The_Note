@@ -1,20 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Main_Character_Controller : MonoBehaviour
-{
-
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:297197f3ed61516b02958799ddd96e34fc98d99f14826c4c199a5c0a3941fc76
+size 335

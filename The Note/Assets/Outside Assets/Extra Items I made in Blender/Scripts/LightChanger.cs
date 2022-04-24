@@ -1,33 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class LightChanger : MonoBehaviour
-{
-    private Light light;
-
-    [SerializeField]
-    private bool ifPressed;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        ifPressed = false;
-        
-        light = GetComponent<Light>();
-        light.intensity = 0;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(ifPressed && light.intensity < 5000)
-        {
-            light.intensity = light.intensity + 1000 * Time.deltaTime;
-        }
-        else if(!ifPressed && light.intensity > 0)
-        {
-            light.intensity = light.intensity - 1000 * Time.deltaTime;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:791a039cda1219e27b8e4f2d1f1a7eb81208e8707652da6c1d0305e5cad7f644
+size 772
